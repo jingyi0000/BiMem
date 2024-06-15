@@ -44,7 +44,20 @@ python calc_prototype.py --resume_path path-to-warm-up-model.pkl
 ```
 - Train the model
 ```bash
-python train.py --name gta2citylabv2_stage1Denoise --used_save_pseudo --ema --proto_rectify --moving_prototype --path_soft path-to-source-model-predicted-pseudo-labels --resume_path path-to-warm-up-model.pkl --proto_consistW 0.0 --rce --regular_w 0.0
+python train.py --name gta2citylabv2_stage1Denoise --used_save_pseudo --ema --proto_rectify --moving_prototype --path_soft path-to-source-model-predicted-pseudo-labels --resume_path path-to-warm-up-model.pkl --rce
 ```
 
-
+## Citation
+We appreciate your citations if you find our paper related and useful to your research!
+```
+@InProceedings{Zhang_2023_ICCV,
+    author    = {Zhang, Jingyi and Huang, Jiaxing and Jiang, Xueying and Lu, Shijian},
+    title     = {Black-Box Unsupervised Domain Adaptation with Bi-Directional Atkinson-Shiffrin Memory},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {11771-11782}
+}
+```
+## Acknowledgments
+This code is heavily borrowed from [ProDA](https://github.com/microsoft/ProDA).
